@@ -3,10 +3,10 @@ description: >
   On-device NSFW content detection for Flutter. Privacy-first image & video
   scanning using CoreML (iOS) and LiteRT/TFLite (Android). Includes a
   ready-to-use NsfwGuardWidget that auto-blurs unsafe content.
-version: 0.0.1
-homepage: https://github.com/example/flutter_nsfw_detector
-repository: https://github.com/example/flutter_nsfw_detector
-issue_tracker: https://github.com/example/flutter_nsfw_detector/issues
+version: 0.0.2
+homepage: https://github.com/Sonal-Welihinda/flutter_nsfw_detector
+repository: https://github.com/Sonal-Welihinda/flutter_nsfw_detector
+issue_tracker: https://github.com/Sonal-Welihinda/flutter_nsfw_detector/issues
 
 topics:
   - nsfw
