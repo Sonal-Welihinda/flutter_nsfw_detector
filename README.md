@@ -14,6 +14,12 @@ Uses **CoreML** on iOS and **LiteRT** (TFLite) on Android for high-performance, 
 - **UI Integration**: Drop-in `NsfwGuardWidget` to seamlessly protect your users from unexpected explicit content.
 - **Network Compatibility**: Built-in support for `ImageProvider` allows seamless integration with network image libraries like `cached_network_image`.
 
+## Supported Platforms
+| Platform | Minimum Version |
+| :--- | :--- |
+| **Android** | API 21 (Android 5.0) |
+| **iOS** | iOS 13.0 |
+
 ---
 
 ## Installation
@@ -80,6 +86,17 @@ final videoResult = await FlutterNsfwDetector.scanVideo(file: videoFile, frameCo
 final byteResult = await FlutterNsfwDetector.scanImageBytes(bytes: myImageBytes);
 final providerResult = await FlutterNsfwDetector.scanImageProvider(provider: myProvider);
 ```
+
+---
+
+## App Size Impact
+
+Because this plugin is **privacy-first** and runs entirely offline without internet dependencies, the ML models must be bundled directly within your app.
+
+*   **Android (.tflite)**: Adds ~17 MB to your APK size.
+*   **iOS (.mlmodelc)**: Adds ~12 MB to your IPA size.
+
+These are highly optimized models (MobileNet v2 / OpenNSFW2 architecture) that provide the absolute best balance of extreme performance, low battery usage, and high accuracy for on-device detection.
 
 ---
 
