@@ -1,4 +1,4 @@
-group = "com.example.flutter_nsfw_detector"
+group = "lk.sonal.flutter_nsfw_detector"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -27,7 +27,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.flutter_nsfw_detector"
+    namespace = "lk.sonal.flutter_nsfw_detector"
 
     compileSdk = 36
 

@@ -32,7 +32,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.flutter_nsfw_detector
+        package: lk.sonal.flutter_nsfw_detector
         pluginClass: FlutterNsfwDetectorPlugin
       ios:
         pluginClass: FlutterNsfwDetectorPlugin
